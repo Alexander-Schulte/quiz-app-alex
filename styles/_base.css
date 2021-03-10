@@ -29,42 +29,35 @@ button {
 
 .main-grid {
   display: grid;
-  grid-template-rows: [header] 1fr [main] auto [footer] 1fr;
-  grid-template-columns: [width] 375px;
+  height: 100vh;
+  min-width: 320px;
+  max-width: 30vw;
+  grid-template-rows: [header] 60px [main] auto [footer] 80px;
   margin: 0 auto;
-  width: 375px;
 }
 
 .head-grid {
   grid-row: header;
   background-color: var(--header-color);
   text-align: center;
-  position: sticky;
   top: 0;
 }
 
 .content {
   grid-row: main;
-  grid-column: [width];
   background-color: var(--content-background-color);
   text-align: center;
   font-size: 24px;
+  overflow-y: scroll;
+  word-break: break-all;
 }
 
 .footer-grid {
+  grid-row: footer;
   display: flex;
   flex-direction: row;
-  grid-row: footer;
   background-color: var(--footer-color);
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: auto;
+  font-size: 30px;
   justify-content: space-around;
   align-items: center;
-}
-
-footer {
-  grid-row: footer;
 }
