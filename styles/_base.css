@@ -96,7 +96,6 @@ button {
 }
 
 .answer-button {
-  width: 75%;
   background-color: var(--content-background-color);
   cursor: pointer;
   color: black;
