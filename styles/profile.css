@@ -29,7 +29,7 @@ button {
   font-size: 1em;
 }
 
-.main-grid {
+.container {
   display: grid;
   gap: 20px;
   height: 100vh;
@@ -40,14 +40,14 @@ button {
   gap: 5px;
 }
 
-.head-grid {
+.container__header {
   grid-row: header;
   background-color: var(--header-color);
   text-align: center;
   top: 0;
 }
 
-.content {
+.container__content {
   grid-row: main;
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@ button {
   word-break: break-all;
   padding-top: 10px;
 }
-.profile {
+.container__content__profile {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -84,7 +84,7 @@ button {
   width: 100%;
   height: auto;
 }
-.footer-grid {
+.container__content__footer {
   grid-row: footer;
   display: flex;
   flex-direction: row;
@@ -94,7 +94,7 @@ button {
   align-items: center;
 }
 
-.tag-list {
+.container__content__card__tags {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -103,14 +103,14 @@ button {
   align-items: center;
 }
 
-.tag-item {
+.container__content__card__tags__tag-item {
   border: 1px solid grey;
   padding: 1px;
   background-color: var(--content-background-color);
-  font-size: 16px;
+  font-size: 12px;
 }
 
-.answer-button {
+.container__content__card__div-button__answer-button {
   width: 75%;
   background-color: var(--content-background-color);
   cursor: pointer;
