@@ -1,3 +1,5 @@
+@import 'color.css';
+
 * {
   box-sizing: border-box;
 }
@@ -96,6 +98,7 @@ button {
 }
 
 .answer-button {
+  width: 75%;
   background-color: var(--content-background-color);
   cursor: pointer;
   color: black;
@@ -107,9 +110,4 @@ button {
   right: 5px;
   top: -3px;
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-
-.bookmark-icon:active {
-  color: white;
 }

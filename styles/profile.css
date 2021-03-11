@@ -1,3 +1,5 @@
+@import 'color.css';
+
 * {
   box-sizing: border-box;
 }
@@ -57,18 +59,7 @@ button {
   word-break: break-all;
   padding-top: 10px;
 }
-
-.footer-grid {
-  grid-row: footer;
-  display: flex;
-  flex-direction: row;
-  background-color: var(--footer-color);
-  font-size: 30px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.card {
+.profile {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -77,6 +68,30 @@ button {
   margin-bottom: 10px;
   position: relative;
   padding: 5px;
+  align-items: center;
+}
+
+.circular-image {
+  padding-left: 0;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular-image-img {
+  width: 100%;
+  height: auto;
+}
+.footer-grid {
+  grid-row: footer;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--footer-color);
+  font-size: 30px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .tag-list {
@@ -92,24 +107,13 @@ button {
   border: 1px solid grey;
   padding: 1px;
   background-color: var(--content-background-color);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .answer-button {
+  width: 75%;
   background-color: var(--content-background-color);
   cursor: pointer;
   color: black;
   border-radius: 1em;
-}
-
-.bookmark-icon {
-  position: absolute;
-  right: 5px;
-  top: -3px;
-  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-
-.bookmark-icon:active {
-  color: white;
 }
