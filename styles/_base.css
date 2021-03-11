@@ -27,7 +27,7 @@ button {
   font-size: 1em;
 }
 
-.main-grid {
+.container {
   display: grid;
   gap: 20px;
   height: 100vh;
@@ -38,14 +38,14 @@ button {
   gap: 5px;
 }
 
-.head-grid {
+.container__header {
   grid-row: header;
   background-color: var(--header-color);
   text-align: center;
   top: 0;
 }
 
-.content {
+.container__content {
   grid-row: main;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ button {
   padding-top: 10px;
 }
 
-.footer-grid {
+.container__footer {
   grid-row: footer;
   display: flex;
   flex-direction: row;
@@ -68,7 +68,7 @@ button {
   align-items: center;
 }
 
-.card {
+.container__content__card {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -79,7 +79,7 @@ button {
   padding: 5px;
 }
 
-.tag-list {
+.container__content__card__tags {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -88,21 +88,21 @@ button {
   align-items: center;
 }
 
-.tag-item {
+.container__content__card-tag__tag-item {
   border: 1px solid grey;
   padding: 1px;
   background-color: var(--content-background-color);
   font-size: 12px;
 }
 
-.answer-button {
+.container__content__card__div-button__answer-button {
   background-color: var(--content-background-color);
   cursor: pointer;
   color: black;
   border-radius: 1em;
 }
 
-.bookmark-icon {
+.container__content__card--bookmark-icon {
   position: absolute;
   right: 5px;
   top: -3px;
@@ -110,6 +110,6 @@ button {
   cursor: pointer;
 }
 
-.bookmark-icon:active {
+.container__content__card--bookmark-icon:active {
   color: white;
 }
