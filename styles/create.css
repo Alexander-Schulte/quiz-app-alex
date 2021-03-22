@@ -1,4 +1,5 @@
 @import 'color.css';
+
 * {
   box-sizing: border-box;
 }
@@ -28,6 +29,11 @@ button {
   font-size: 1em;
 }
 
+label {
+  margin-top: 10px;
+}
+
+
 .container {
   display: grid;
   gap: 20px;
@@ -51,12 +57,32 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: var(--content-background-color);
+
+
   align-items: center;
   font-size: 16px;
+  overflow-y: scroll;
+
+  background-color: var(--content-background-color);
+  
+  font-size: 16px;
+
   word-break: break-all;
   padding-top: 10px;
 }
+
+
+.container__content__card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: var(--section-background-color);
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 5px;
+}
+
 
 .container__footer {
   grid-row: footer;
@@ -68,6 +94,22 @@ button {
   align-items: center;
 }
 
+
+.question-box-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 400px;
+}
+
+.question-box-form__input-answer {
+  width: 50%;
+  margin: 10px 0;
+
 .container__content__card__div-button__answer-button {
   margin: 20px;
 }
@@ -76,4 +118,5 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+
 }

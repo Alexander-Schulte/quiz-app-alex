@@ -1,3 +1,5 @@
+@import 'color.css';
+
 * {
   box-sizing: border-box;
 }
@@ -108,8 +110,17 @@ button {
   top: -3px;
   box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-}
-
-.container__content__card--bookmark-icon:active {
   color: white;
 }
+
+.javaScript__icon {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+/*.container__content__card--bookmark-icon:active {
+  color: white;
+}*/
