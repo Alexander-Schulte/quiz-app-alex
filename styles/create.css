@@ -29,9 +29,11 @@ button {
   font-size: 1em;
 }
 
+
 label {
   margin-top: 10px;
 }
+
 
 .container {
   display: grid;
@@ -60,9 +62,15 @@ label {
   align-items: center;
   font-size: 16px;
   overflow-y: scroll;
+
+  background-color: var(--content-background-color);
+  align-items: center;
+  font-size: 16px;
+
   word-break: break-all;
   padding-top: 10px;
 }
+
 
 .container__content__card {
   display: flex;
@@ -75,6 +83,7 @@ label {
   padding: 5px;
 }
 
+
 .container__footer {
   grid-row: footer;
   display: flex;
@@ -84,6 +93,7 @@ label {
   justify-content: space-around;
   align-items: center;
 }
+
 
 .question-box-form {
   display: flex;
@@ -99,4 +109,14 @@ label {
 .question-box-form__input-answer {
   width: 50%;
   margin: 10px 0;
+
+.container__content__card__div-button__answer-button {
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
 }
