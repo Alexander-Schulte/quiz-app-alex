@@ -29,6 +29,10 @@ button {
   font-size: 1em;
 }
 
+label {
+  margin-top: 10px;
+}
+
 .container {
   display: grid;
   gap: 20px;
@@ -52,22 +56,12 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: var(--content-background-color);
+
   align-items: center;
   font-size: 16px;
   overflow-y: scroll;
   word-break: break-all;
   padding-top: 10px;
-}
-
-.container__footer {
-  grid-row: footer;
-  display: flex;
-  flex-direction: row;
-  background-color: var(--footer-color);
-  font-size: 30px;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .container__content__card {
@@ -81,46 +75,28 @@ button {
   padding: 5px;
 }
 
-.container__content__card__tags {
+.container__footer {
+  grid-row: footer;
   display: flex;
   flex-direction: row;
-  list-style: none;
-  padding-left: 0;
-  justify-content: space-evenly;
+  background-color: var(--footer-color);
+  font-size: 30px;
+  justify-content: space-around;
   align-items: center;
 }
 
-.container__content__card-tag__tag-item {
-  border: 1px solid grey;
-  padding: 1px;
-  background-color: var(--content-background-color);
-  font-size: 12px;
+.question-box-form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 400px;
 }
 
-.container__content__card__div-button__answer-button {
-  background-color: var(--content-background-color);
-  cursor: pointer;
-  color: black;
-  border-radius: 1em;
+.question-box-form__input-answer {
+  width: 50%;
+  margin: 10px 0;
 }
-
-.container__content__card--bookmark-icon {
-  position: absolute;
-  right: 5px;
-  top: -3px;
-  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  color: white;
-}
-
-.javaScript__icon {
-  color: black;
-}
-
-.hidden {
-  display: none;
-}
-
-/*.container__content__card--bookmark-icon:active {
-  color: white;
-}*/
