@@ -10,14 +10,12 @@
 
     <script
       src="https://kit.fontawesome.com/0a5eba83a2.js"
-
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
     <div class="container">
       <header class="container__header">
-
         <h1>Quiz App</h1>
       </header>
 
@@ -31,6 +29,18 @@
               type="text"
               name="question"
               id="question-box__input-question"
+              class="question-box-form__question"
+              placeholder="What is your Question?"
+              required
+            />
+
+            <label class="question-box-form__label" for="question-box__question"
+              >Add your answer here!:</label
+            >
+            <input
+              type="text"
+              name="answer"
+              id="question-box__input-answer"
               class="question-box-form__question"
               placeholder="What is your Question?"
               required
@@ -64,7 +74,5 @@
     </div>
 
     <script src="create.js"></script>
-
-
   </body>
 </html>
