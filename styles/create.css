@@ -36,7 +36,6 @@ label {
 
 .container {
   display: grid;
-  gap: 20px;
   height: 100vh;
   min-width: 320px;
   max-width: 30vw;
