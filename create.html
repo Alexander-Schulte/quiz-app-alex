@@ -4,53 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="styles/create.css" />
+
+    <link rel="stylesheet" href="/styles/create.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <script
-      src="https://kit.fontawesome.com/ecc5132404.js"
+      src="https://kit.fontawesome.com/0a5eba83a2.js"
+
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
     <div class="container">
       <header class="container__header">
-        <h1>Create</h1>
+
+        <h1>Quiz App</h1>
       </header>
+
       <main class="container__content">
-        <form>
-          <label for="question">Question:</label>
-          <textarea
-            id="question"
-            name="question"
-            placeholder="type here your Question..."
-            rows="10"
-            cols="30"
-          ></textarea>
-        </form>
-        <form>
-          <label for="answer">Answer:</label>
-          <textarea
-            id="answer"
-            name="answer"
-            placeholder="type here your Answer..."
-            rows="10"
-            cols="30"
-          ></textarea>
-        </form>
-        <form>
-          <label for="tags">Tags:</label>
-          <textarea
-            id="tags"
-            name="tags"
-            placeholder="type here your tags: tag1, tag2, tag3..."
-            rows="2"
-            cols="30"
-          ></textarea>
-        </form>
-        <div class="container__content__card__div-button">
-            <button
-              class="container__content__card--div-button__answer-button--active container__content__card__div-button__answer-button"
-            >Submit</button>
+        <div class="container__content__card">
+          <form class="question-box-form">
+            <label class="question-box-form__label" for="question-box__question"
+              >Add your question here:</label
+            >
+            <input
+              type="text"
+              name="question"
+              id="question-box__input-question"
+              class="question-box-form__question"
+              placeholder="What is your Question?"
+              required
+            />
+
+            <label class="question-box-form__label" for="question-box__tags"
+              >Add relevant tags here:</label
+            >
+            <input
+              type="text"
+              name="hashtag"
+              id="question-box__tags"
+              class="question-box-form__input-tags"
+              placeholder="#English, #German, #Math"
+              required
+            />
+
+            <button type="submit" class="question-box-form__submit-button">
+              Submit!
+            </button>
+          </form>
+        </div>
       </main>
+
       <footer class="container__footer">
         <a href="./index.html"><i class="fas fa-home"></i></a>
         <a href="./bookmarks.html"><i class="fas fa-bookmark"></i></a>
@@ -58,5 +62,9 @@
         <a href="./create.html"><i class="fas fa-sticky-note"></i></a>
       </footer>
     </div>
+
+    <script src="create.js"></script>
+
+
   </body>
 </html>
