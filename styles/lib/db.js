@@ -1,4 +1,31 @@
-export const data = [
+export function pushSection(sectionObject) {
+  console.log(sectionObject)
+
+  let sections
+
+  const storageSections = JSON.parse(localStorage.getItem('sections'))
+  if (storageSections === null) {
+    sections = []
+  } else {
+    sections = storageSections
+  }
+
+  sections.push(sectionObject)
+  localStorage.setItem('sections', JSON.stringify(sections))
+}
+
+export function getSections() {
+  let sections
+  const storageSections = JSON.parse(localStorage.getItem('sections'))
+  if (storageSections === null) {
+    sections = []
+  } else {
+    sections = storageSections
+  }
+  return sections
+}
+
+/*export const data = [
   {
     id: 0,
     question: 'What type of a language is HTML?',
@@ -77,4 +104,4 @@ export const data = [
     isBookmarked: true,
     tags: ['Git'],
   },
-]
+] */

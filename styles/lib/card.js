@@ -19,7 +19,6 @@ export function createCard(card) {
     'fa-bookmark',
     'container__content__card--bookmark-icon'
   )
-  bookmarkElement.textContent = card.isBookmarked.checked
   bookmarkElement.style.color = 'white'
   cardSection.append(bookmarkElement)
 
@@ -66,10 +65,10 @@ export function createCard(card) {
   cardSection.append(ulElement)
 
   /* create the specific list-items */
-  for (let i = 0; i < card.tags.length; i++) {
+  for (let i = 0; i < card.hashtag.length; i++) {
     const listItemElement = document.createElement('li')
     listItemElement.classList.add('container__content__card__tags__tag-item')
-    listItemElement.textContent = card.tags[i]
+    listItemElement.textContent = card.hashtag[i]
     ulElement.append(listItemElement)
   }
 

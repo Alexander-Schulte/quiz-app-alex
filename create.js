@@ -1,9 +1,31 @@
-import { pushSection } from ./src/lib/debug.js;
+import { pushSection } from './styles/lib/db.js'
 
-const form = document.querySelector("form");
+const form = document.querySelector('form')
 
-form.addEventListener("submit" , (event) => {
-  event.preventDefault();
+form.addEventListener('submit', event => {
+  event.preventDefault()
+
+  const questionInput = form['question'].value
+  const answerInput = form['answer'].value
+  const hashtagInput = form['hashtag']
+  const hashtagInputArray = itemsStringToArray(hashtagInput.value)
+
+  const input = {
+    question: questionInput,
+    answer: answerInput,
+    hashtag: hashtagInputArray,
+  }
+
+  pushSection(input)
+
+  form.reset()
+  alert('Section done!')
+})
+
+function itemsStringToArray(hashtagString) {
+  const itemsArray = hashtagString.split(',')
+
+  return itemsArray
 }
 
 /* const button = document.querySelectorAll('button')
@@ -22,5 +44,5 @@ form.addEventListener('submit', event => {
   console.log(data)
 
   form.reset()
-}) */
- 
+}) 
+*/
