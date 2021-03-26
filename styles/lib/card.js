@@ -25,6 +25,7 @@ export function createCard(card) {
   bookmarkElement.addEventListener('click', () => {
     if (bookmarkElement.style.color === 'white') {
       bookmarkElement.style.color = 'black'
+      pushSection(input)
     } else {
       bookmarkElement.style.color = 'white'
     }
